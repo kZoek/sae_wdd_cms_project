@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fanwood+Text:ital@0;1&family=Holtwood+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/font_and_color.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/admintool.css">
+    <title>admintool</title>
+    <style>
+        #editText{
+            color:#3a250c;
+        }
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">game</a></li>
+            <li><a href="">tutorial</a></li>
+            <li><a href="">profil</a></li>
+        </ul>
+    </nav>
+    <!-- title of the page -->
+    <header class="title">
+        <h1 class="sitetitle">lost in the woods</h1>
+    </header>
+
+    <!-- profil -->
+    <aside class="logoutButton">
+        <ul>
+            <li><a href="">log out</a></li>
+        </ul>
+    </aside>
+    <aside class="settingsmenu">
+        <!-- <ul>
+            <li><a href="">edit home page</a></li>
+            <li><a href="">edit about page</a></li>
+            <li><a href="">edit tutorial page</a></li>
+            <li><a href="">user list</a></li>
+        </ul> -->
+
+    </aside>
+       <h2>Welcome Admin</h2>
+    <section class="about">
+        <!-- infos about the player -->
+        <div class="editcontainer">
+            <!-- all sections will be dynamic with php, if the person select from menu -->
+            <!-- otherwise it will show, wich sites you can edit -->
+            <!-- first section on the page, with edit possibilities  -->
+            <div class="card">
+                <form method="POST">
+                    <label class="card-title" for="editTitle">Title: </label>
+                    <input type="text" name="editTitle" id="editTitle" value="">
+                    <label class="card-title" for="editText">Edit Content: </label>
+                    <textarea name="editText" id="editText" cols="30" rows="10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Magni dolorum nulla eius, dolor sapiente cum a atque blanditiis assumenda ad reprehenderit repellendus excepturi.</textarea>
+                    <input type="hidden" name="hiddenId" value="">
+                    <input class="submitButton" type="submit" name="saveChanges" value="save Changes">
+                </form>
+            </div>'
+            <!-- second section on the page, with edit possibilities  -->
+            <div class="card">
+                <h3>add new updates Entry on Home</h3>
+                <span class="card-title"> Entry name: </span>
+                <p>new entry</p>
+                <span class="card-title"> Add new Content: </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus ad repudiandae atque? 
+                    Quae dolores officia quasi suscipit ea nihil fugiat nam repudiandae.</p>
+            </div>
+            <!-- third section on the page, with edit possibilities  -->
+            <div class="card">       
+                <h3>delete old Entry from Updates on Home</h3>
+                <span class="card-title"> select Entry: </span>
+                <select name="entryDelete" id="enrtyDel">
+                    <option value="0"> -- choose an entry -- </option>
+                    <option value="1">entry name</option>
+                    <option value="2">entry name</option>
+                    <option value="3">entry name</option>
+                </select>
+            </div>
+
+
+        </div>
+
+ 
+    </section>
+
+</body>
+</html>

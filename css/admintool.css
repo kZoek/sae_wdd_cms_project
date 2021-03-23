@@ -1,0 +1,60 @@
+@import url("font_and_color.css");
+
+/* admintool layout design for desktop <1000px */
+.admintool{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+/* side menu to select pages */
+.settingsmenu{
+    background-color: var(--solid-bg-color);
+    position: fixed;
+    left:0;
+    top:350px;
+    width:20%;
+    box-shadow:0 0 5px black;
+}
+
+.settingsmenu > ul > li >a{
+    font-size:2.5rem;
+    margin:0.5em;
+}
+/* settings menu on smaller screen > 1000px */
+@media screen and (max-width:999px){
+    .settingsmenu{
+        justify-self: flex-start;
+        background-color: var(--solid-bg-color);
+        position: relative;
+        top:0;
+        width:90%;
+        box-shadow:0 0 5px black;
+    }
+}
+/* settings menu on smaller screen > 400px */
+@media screen and (max-width:339px){
+    .settingsmenu > a{
+        font-size:1.85rem;
+    }
+}
+/* content to edit */
+.editContent{
+    position: relative;
+    padding:0.5em;
+    background-color: rgba(154, 165, 63, 0.5);
+}
+.card{
+    border-bottom: solid 2px var(--strong-bg-color);
+}
+.card:last-of-type{
+    border:none;
+}
+.changeInfo{
+    color: rgb(30, 95, 19);
+}
+/* separate font color */
+#editTitle,#editText{
+    color:#3a250c;
+}
